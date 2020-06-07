@@ -55,5 +55,21 @@
       "type": "image/png",
       "purpose": "maskable any"
     }
+  ],
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "resources": {
+        "files": [
+          "/favicon.ico",
+          "/index.html",
+          "/*.js",
+          "/*.css",
+          "/assets/**/*"
+        ]
+      }
+    }
   ]
 }
