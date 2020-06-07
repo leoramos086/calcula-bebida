@@ -1,7 +1,7 @@
 {
   "name": "calcula-bebida",
   "short_name": "calcula-bebida",
-  "theme_color": "#1976d2",
+  "theme_color": "#EC9D00",
   "background_color": "#fafafa",
   "display": "standalone",
   "scope": "./",
@@ -55,21 +55,6 @@
       "type": "image/png",
       "purpose": "maskable any"
     }
-  ],
-  "assetGroups": [
-    {
-      "name": "app",
-      "installMode": "prefetch",
-      "updateMode": "prefetch",
-      "resources": {
-        "files": [
-          "/favicon.ico",
-          "/index.html",
-          "/*.js",
-          "/*.css",
-          "/assets/**/*"
-        ]
-      }
-    }
   ]
+  
 }
