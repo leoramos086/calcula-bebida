@@ -1,1 +1,94 @@
 /* You can add global styles to this file, and also import other style files */
+
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+
+
+$family-sans-serif: "Nunito", sans-serif;
+
+$primary: #EC9D00;
+
+$body-background-color: #FAE96F;
+
+$card-footer-padding: 20px;
+// $card-content-padding: 3rem;
+// $card-footer-border-top: 1px solid red;
+// $card-footer-background-color: red;
+$card-footer-padding: 2rem;
+
+@import "../node_modules/bulma/bulma.sass";
+
+
+.card-header-title{
+    justify-content: center;
+    
+    font-size: 1.5em;
+    
+}
+
+.app{
+
+    $this: &;
+
+    &-header{
+        
+        width: 90vw;
+        display: block;
+        text-align: center;
+        padding: 10px 0;
+        
+        
+    }
+    
+    &-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: self-start;
+        height: 100vh;
+        
+    }
+
+    &-card{
+        width: 90vw;
+
+        .card-content{
+            & > .field:first-child{
+                padding-top: 0px;
+            }
+
+            & > .field{
+                padding-top: 15px;
+            }
+        }
+        
+        
+
+        &__footer{
+            display: block;
+            padding: .8rem 1.5rem .5rem;
+           
+            background-color: $primary;
+
+            p{
+                position: relative;
+                color: whitesmoke;
+                // font-size: 1.5em;
+                text-align: center;
+
+                
+                span{
+                    font-size: 4em;
+                    font-weight: bold;
+                    &::before{
+                        content: "R$ ";
+                        font-size: .4em;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
